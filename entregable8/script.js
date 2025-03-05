@@ -370,8 +370,17 @@ document.addEventListener("DOMContentLoaded", () => {
                 passwordLevel.innerHTML = "HIGH";
                 level4.style.backgroundColor = "yellow";
                 level4.style.borderColor = "yellow";
-            } else {
+            } else if(tam >= 10 && tam <= 15){
                 passwordLevel.innerHTML = "MEDIUM";
+            }
+            else {
+                passwordLevel.innerHTML = "LOW";
+                level2.style.backgroundColor = "black";
+                level2.style.borderColor = "white";
+                level3.style.backgroundColor = "black";
+                level3.style.borderColor = "white";
+                level4.style.backgroundColor = "black";
+                level4.style.borderColor = "white";
             }
         }
     }
